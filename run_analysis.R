@@ -50,7 +50,13 @@ HAR <- merge(alabels, HAR, by = "activity_code")
 rm(alabels) # Removing variables
 
 #Start of Question # 4
-newnames <- gsub("\\(|,", "-", gsub("\\()|\\)", "", names(HAR)))
+newnames <- names(HAR)
+newnames <- gsub("Acc", "Acceleromter", newnames)
+newnames <- gsub("Gyro", "Gyroscope", newnames)
+newnames <- gsub("Mag", "Magnitude", newnames)
+newnames <- gsub("Freq", "Frequency", newnames)
+newnames <- gsub("Gyro", "Gyroscope", newnames)
+newnames <- gsub("std", "standard-deviation", newnames)
 names(HAR) <- newnames
 rm(newnames) # Removing variables
 
