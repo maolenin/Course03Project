@@ -1,34 +1,5 @@
 # Course03Project
 ## Getting and Cleaning Data Course Project
-### DATA
-#### Temporary variables
-##### General variables
-1. features:  List of all features.
-2. alabels:   Activity labels.
-##### Test variables
-3. stest:     Subject test.
-4. xtest:     Test set.
-5. ytest:     Test labels.
-6. **test:    Data frame of test data set tidy**
-##### Train variables
-7. strain:     Subject train.
-8. xtrain:     Train set.
-9. ytrain:     Train labels.
-10. **train:    Data frame of train data set tidy**
-##### working variables
-11. temp: Variables used to clean the headers.
-12. var: Variables used to clean the headers.
-13. var1: Variables used to clean the headers.
-#### Final variables
-1. HAR:    Final Tidy data set.
-2. HARmean: Data set mean Summarized by subject and by activity.
-### HEADERS for HAR and HARmean
-1. subject: Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-2. activity_code: labels with their activity name showed by number with 6 categories.
-3. activity: labels with their activity name showed by letter with 6 categories.
-4- mode: indicates if the data was get from **test mode** or **train mode**
-5:90: mean of each variable of the data obtained from Galaxy phones for HAR, being an average fro HARmean for each subject and by activity.
-
 ### CODE
 The code was cut in five parts, where each part represents the question. It was used 13 temporary variables to get and clean the data.
 #### First Part
